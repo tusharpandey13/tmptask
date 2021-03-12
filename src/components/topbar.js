@@ -16,11 +16,16 @@ const Topbar = props => {
         <div className='flex flex-col justify-center text-gray-300 text-2xl'>PORTFOLIO DASHBOARD</div>
       </div>
       <div className='flex md:flex-col justify-center'>
-        <div className='flex cursor-pointer'>
-          <span className='font-bold mr-2'>MY PORTFOLIOS</span>
-          <span className='text-header-dimtext'> | CREATE PORTFOLIO | test_user</span>
-          <Icon className='ml-4' path={mdiAccountCircleOutline} size={`20px`} />
-          <Icon className='ml-1' path={mdiMenuDown} size={`20px`} />
+        <div className='flex flex-col md:flex-row cursor-pointer content-center text-center'>
+          <span className='font-bold mb-1 '>MY PORTFOLIOS</span>
+          <span className='text-header-dimtext hidden md:inline-flex pl-2 pr-2'> |</span>
+          <span className='text-header-dimtext mb-1'> CREATE PORTFOLIO</span>
+          <span className='text-header-dimtext hidden md:inline-flex pl-2 pr-2'> |</span>
+          <div className='flex'>
+            <span className='text-header-dimtext'> test_user</span>
+            <Icon className='ml-4' path={mdiAccountCircleOutline} size={`20px`} />
+            <Icon className='ml-1' path={mdiMenuDown} size={`20px`} />
+          </div>
         </div>
       </div>
     </div>
