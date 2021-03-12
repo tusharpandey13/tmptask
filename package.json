@@ -2,6 +2,7 @@
   "name": "tmptask",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tusharpandey13.github.io/tmptask",
   "dependencies": {
     "@mdi/js": "^5.9.55",
     "@mdi/react": "^1.4.0",
