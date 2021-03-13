@@ -12,5 +12,5 @@
 - based on `create-react-app`
 - `tailwindcss` for styling
 - `axios` for requests and `axios-mock-adapter` for faking api calls
-- `useReducer` for global state
+- `react-redux` for global state
 - responsive design

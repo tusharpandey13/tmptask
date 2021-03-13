@@ -1,8 +1,10 @@
+import { createStore } from 'redux';
+
 const initialState = {
   items: {},
 };
 
-const reducer = (state, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'CHANGE_ITEMS':
       return { ...state, items: action.items };
@@ -13,4 +15,6 @@ const reducer = (state, action) => {
   }
 };
 
-export { initialState, reducer };
+const store = createStore(reducer, initialState);
+
+export { initialState, reducer, store };
