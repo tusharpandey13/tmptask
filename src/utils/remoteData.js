@@ -3,7 +3,6 @@ import MockAdapter from 'axios-mock-adapter';
 
 const data = {
   'PORTFOLIO 1': {
-    '1 YEAR': 8,
     '3 YEAR': 10,
     '5 YEAR': 12,
   },
